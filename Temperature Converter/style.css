@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: #abadb7;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  .mobile {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .temperature-converter {
+    background: #ffffff;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 25px 45px;
+  }
+  .title {
+    color: #101010;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .result {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .result-heading {
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .celsius-value {
+    border-bottom: 2px solid #bebbbb;
+    padding: 10px;
+    transition: all .45s ease;
+  }
+  label {
+    color: #000000;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+  input,
+  select {
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #c8c1c1;
+    padding: 8px;
+    margin-bottom: 15px;
+  }
+  input:focus {
+    border: 1px solid #020212;
+  }
+  .degree-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  .degree-field {
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+  }
+  option {
+    background-color: #ffffff;
+    color: #201e1e;
+  }
+  #convert-btn {
+    background: linear-gradient(to bottom, #3e3ccd, #120fb9);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #f6f6f6;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 12px 80px;
+    transition: all 0.3s ease-in;
+  }
+  #convert-btn:hover {
+    background: linear-gradient(to bottom, #403f69, #322fda);
+  }
+  .fa {
+    margin-left: -12px;
+    margin-right: 8px;
+  }
+  .loading {
+    display: none;
+  }
